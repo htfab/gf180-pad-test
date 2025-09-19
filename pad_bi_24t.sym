@@ -1,0 +1,56 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+spice_sym_def=".subckt pad_bi_24t A CS DVDD DVSS IE OE PAD PD PU SL VDD VSS Y
+x1 A CS DVDD DVSS IE OE PAD PD PU SL VDD VSS Y gf180mcu_fd_io__bi_24t
+.ends"}
+V {}
+S {}
+E {}
+L 4 -130 -70 130 -70 {}
+L 4 -130 70 130 70 {}
+L 4 -130 -70 -130 70 {}
+L 4 130 -70 130 70 {}
+L 4 -150 -60 -130 -60 {}
+L 4 -150 -40 -130 -40 {}
+L 4 -150 -20 -130 -20 {}
+L 4 -150 0 -130 0 {}
+L 4 -150 20 -130 20 {}
+L 4 -150 40 -130 40 {}
+L 4 130 20 150 20 {}
+L 4 -150 60 -130 60 {}
+L 7 130 -60 150 -60 {}
+L 7 130 -40 150 -40 {}
+L 7 130 -20 150 -20 {}
+L 7 130 0 150 0 {}
+L 7 130 40 150 40 {}
+B 5 -152.5 -62.5 -147.5 -57.5 {name=A dir=in}
+B 5 -152.5 -42.5 -147.5 -37.5 {name=PD dir=in}
+B 5 -152.5 -22.5 -147.5 -17.5 {name=PU dir=in}
+B 5 147.5 -62.5 152.5 -57.5 {name=VDD dir=inout}
+B 5 147.5 -42.5 152.5 -37.5 {name=VSS dir=inout}
+B 5 -152.5 -2.5 -147.5 2.5 {name=OE dir=in}
+B 5 -152.5 17.5 -147.5 22.5 {name=IE dir=in}
+B 5 147.5 -22.5 152.5 -17.5 {name=DVDD dir=inout}
+B 5 147.5 -2.5 152.5 2.5 {name=DVSS dir=inout}
+B 5 -152.5 37.5 -147.5 42.5 {name=SL dir=in}
+B 5 147.5 17.5 152.5 22.5 {name=Y dir=out}
+B 5 147.5 37.5 152.5 42.5 {name=PAD dir=inout}
+B 5 -152.5 57.5 -147.5 62.5 {name=CS dir=in}
+T {@symname} -34 -11 0 0 0.3 0.3 {}
+T {@name} 135 -82 0 0 0.2 0.2 {}
+T {A} -125 -64 0 0 0.2 0.2 {}
+T {PD} -125 -44 0 0 0.2 0.2 {}
+T {PU} -125 -24 0 0 0.2 0.2 {}
+T {VDD} 125 -64 0 1 0.2 0.2 {}
+T {VSS} 125 -44 0 1 0.2 0.2 {}
+T {OE} -125 -4 0 0 0.2 0.2 {}
+T {IE} -125 16 0 0 0.2 0.2 {}
+T {DVDD} 125 -24 0 1 0.2 0.2 {}
+T {DVSS} 125 -4 0 1 0.2 0.2 {}
+T {SL} -125 36 0 0 0.2 0.2 {}
+T {Y} 125 16 0 1 0.2 0.2 {}
+T {PAD} 125 36 0 1 0.2 0.2 {}
+T {CS} -125 56 0 0 0.2 0.2 {}
